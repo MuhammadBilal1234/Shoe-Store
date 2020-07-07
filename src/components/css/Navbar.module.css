@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  height: 8vh;
+  border-bottom: 2px solid red;
+
+  background-color: rgba(red, green, blue, 0.1);
+}
+
+.navItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navItems li {
+  list-style: none;
+  padding-right: 35px;
+  padding-top: 10px;
+}
+
+.navItems li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navItems li a:hover {
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+
+}

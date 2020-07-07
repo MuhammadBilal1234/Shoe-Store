@@ -1,0 +1,91 @@
+.container {
+  height: 83.3vh;
+  overflow: hidden;
+  background: url("../../assets/image/main-shoe.jpg") no-repeat center
+    center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  text-align: center;
+  width: 50%;
+  color: white;
+}
+
+.content .text h1 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(-1000px);
+    color: red;
+  }
+  to {
+    transform: translateY();
+    color: white;
+  }
+}
+
+@keyframes leftfadein {
+  from {
+    transform: translateX(-1000px);
+    color: red;
+  }
+  to {
+    transform: translateY();
+    color: white;
+  }
+}
+
+@keyframes rightfadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content .text p {
+  line-height: 2.3rem;
+  padding-bottom: 25px;
+
+  animation-name: leftfadein;
+  animation-duration: 2s;
+}
+
+.content .text a {
+  padding: 0.5rem 1rem;
+  text-emphasis: none;
+  color: white;
+
+  animation-name: rightfadein;
+  animation-duration: 4s;
+}
+.content .text a:hover {
+  border-radius: 5px;
+  padding-right: 5px;
+}

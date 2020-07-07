@@ -1,0 +1,21 @@
+.content {
+  text-align: center;
+  width: 80%;
+  padding: 40px 0px 0px 350px;
+}
+
+.content .github {
+    padding-top: 50px;
+}
+
+.content a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.content a:hover {
+    color: white;
+    background-color: black;
+}
